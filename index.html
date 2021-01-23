@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix I Landing Page UI Design</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <a class="logo" href="#"><img src="logo.png" alt=""></a>
+        <ul class="navigation">
+         <li><a href="#">Accueil</a></li>
+         <li><a href="#">Émissions de TV</a></li>
+         <li><a href="#">Films</a></li>
+         <li><a href="#">Dernier</a></li>
+         <li><a href="#">Ma Liste</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+    <div class="banner">
+        <img class="bg" src="bg.jpg" alt="image">
+        <div class="content">
+            <img class="movieTitle" src="name.png" alt="image">
+            <h4>
+                <span>2021</span>
+                <span><i>12+</i></span>
+                <span>1h 55min</span>
+                <span>Action</span>
+            </h4>
+            <p>L'histoire d'une jeune fille intrépide qui se fait passer pour un homme pour rejoindre les rangs de l'armée opposée aux envahisseurs du Nord qui se rapprochent de la Chine. Fille aînée du brave guerrier Hua, Mulan est une fille énergique et déterminée.</p>
+        <div class="buttons">
+            <a href="#"><i class="fa fa-play" aria-hidden="true"></i> Play</a>
+            <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> Ma Liste</a>
+        </div>
+        </div>
+        <a class="play" href="#" onclick="toggleVideo();"><img class="https://youtu.be/KK8FHdFluOQ" src="play.svg" alt="#">Regarder l'annonce</a>
+    </div>
+    <div class="trailer">
+        <video src="trailer.mp4" controls="true" autoplay="true"></video>
+        <img class="close" src="close.svg" alt="image" onclick="toggleVideo();">
+    </div>
+    <script>
+        function toggleVideo(){
+            const trailer = document.querySelector('.trailer');
+            const video = document.querySelector('video'); 
+            trailer.classList.toggle('active')
+            video.currentTine = 0;
+            video.pause();
+        }
+    </script>
+</body>
+</html>
+
+<!--https://fontawesome.com/v4.7.0/icons/-->
